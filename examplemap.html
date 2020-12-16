@@ -25,7 +25,7 @@
 }
 </style>
 <body>
-<button id="toggle">Toggle Map</button>
+<button id="toggle">Toggle View</button>
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script>
 var positioning = 'map'
@@ -63,7 +63,7 @@ function initialize(error, results) {
     if (error) { throw error }
 
     var graph = results[0]
-    var features = results[1].features
+    var features = results[1].polygon
 
     simulation.nodes(graph.nodes)
         .on('tick', ticked)
