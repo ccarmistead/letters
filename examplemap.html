@@ -56,7 +56,7 @@ var drag = d3.drag()
 
 d3.queue()
     .defer(d3.json, 'data.json')
-    .defer(d3.json, 'continental-us.json')
+    .defer(d3.json, 'counties-10m.json')
     .awaitAll(initialize)
 
 function initialize(error, results) {
