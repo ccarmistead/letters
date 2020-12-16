@@ -25,7 +25,7 @@
 }
 </style>
 <body>
-<button id="toggle">Toggle View</button>
+<button id="toggle">Toggle Views</button>
 <script src="//d3js.org/d3.v4.min.js"></script>
 <script>
 var positioning = 'map'
@@ -56,14 +56,14 @@ var drag = d3.drag()
 
 d3.queue()
     .defer(d3.json, 'data.json')
-    .defer(d3.json, 'counties-10m.json')
+    .defer(d3.json, 'countries.json')
     .awaitAll(initialize)
 
 function initialize(error, results) {
     if (error) { throw error }
 
     var graph = results[0]
-    var features = results[1].objects
+    var features = results[1].features
 
     simulation.nodes(graph.nodes)
         .on('tick', ticked)
@@ -78,7 +78,7 @@ function initialize(error, results) {
     var map = svg.append('g')
         .attr('class', 'map')
         .selectAll('path')
-        .data(objects)
+        .data(features)
         .enter().append('path')
         .attr('d', path)
 
