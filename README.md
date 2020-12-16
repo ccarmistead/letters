@@ -1,4 +1,4 @@
-# Letter-Writing in the Anthropocene
+## Letter-Writing in the Anthropocene
 
 # Welcome
 
