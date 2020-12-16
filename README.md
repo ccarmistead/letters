@@ -1,19 +1,18 @@
-## Welcome to GitHub Pages
+# Letter-Writing in the Anthropocene
 
-You can use the [editor on GitHub](https://github.com/ccarmistead/letters/edit/main/README.md) to maintain and preview the content for your website in Markdown files.
+[subheader here - or introductory intro]
 
-Whenever you commit to this repository, GitHub Pages will run [Jekyll](https://jekyllrb.com/) to rebuild the pages in your site, from the content in your Markdown files.
+## Intro
 
-### Markdown
+[text]
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
+## Other
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
+## Upload a letter
+
+
+### Other
 
 - Bulleted
 - List
